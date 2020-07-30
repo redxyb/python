@@ -1,0 +1,5 @@
+2020-07-24 09:46:37,020 - web.py[line:51] - INFO:动态资源请求：/index.html
+2020-07-24 09:46:37,356 - web.py[line:79] - INFO:静态资源请求：/css/bootstrap.min.css
+2020-07-24 09:46:37,361 - web.py[line:79] - INFO:静态资源请求：/js/jquery-1.12.4.min.js
+2020-07-24 09:46:37,390 - web.py[line:79] - INFO:静态资源请求：/js/bootstrap.min.js
+2020-07-24 09:47:00,475 - web.py[line:51] - INFO:动态资源请求：/center.html

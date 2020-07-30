@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" type="text/css" href="../static/register.css">
+    <link rel="shortcut icon" href="{% static "image/favicon.ico"%}">
+</head>
+<body>
+<h1 style="color: red" align="center">欢迎注册</h1>
+<div class="div">
+    <h1 style="align-content: center">请准确填写注册信息</h1>
+    <form method="post">
+        <label>用户名：</label><input type="text" name="username" placeholder="请输入要注册的用户名"><br>
+        <label>密&nbsp;&nbsp;&nbsp;码：</label><input type="password" name="password" placeholder="请输入密码"><br>
+        <label>邮&nbsp;&nbsp;&nbsp;箱：</label><input type="text" name="email" placeholder="请输入合法邮箱">请记住该邮箱，找回密码要验证<br>
+        <label>电&nbsp;&nbsp;&nbsp;话：</label><input type="text" name="phonenum" placeholder="请输入电话号码">选填<br>
+        <input type="submit" href="" value="注册用户">注册成功将自动登录<br>
+        {% if error %}
+            <div style="color: red" class="alert alert-warning">{{ error }}</div>
+        {% endif %}
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="{% static "login.css" %}">
+
+    <link REL="SHORTCUT ICON" HREF="{% static "image/favicon.ico" %}">
+</head>
+<body>
+<div class="div">
+    <h1 style="color: red;">欢迎图书管理网站</h1>
+    <form method="post">
+        <label>用户名：</label><input type="text" name="username" placeholder="请输入用户名"><br/>
+        <label>密&nbsp;&nbsp;&nbsp;码：</label><input type="password" name="password" placeholder="请输入密码"><br/>
+        <input href="booklist_page" type="submit" value="登录"><br>
+        <a href="register.html">注册用户</a><br>
+        <a href="find_password.html">找回密码</a><br>
+    {% if error %}
+        <div style="color:red;" class="alert alert-warning">{{ error }}</div>
+    {% endif %}
+    </form>
+
+</div>
+</body>
+</html>

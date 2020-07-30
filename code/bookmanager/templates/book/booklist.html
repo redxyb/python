@@ -1,0 +1,24 @@
+<!--
+ * @Author: xyb
+ * @Date: 2020-07-25 17:02:11
+ * @LastEditTime: 2020-07-25 17:15:19
+-->
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="zh">
+<link rel="shortcut icon" href="{% static "image/favicon.ico" %}">
+<head>
+    <meta charset="utf-8">
+    <title>booklist</title>
+</head>
+
+<body>
+<h1>已有书籍如下：</h1>
+    {% for i in books %}
+    <di style="color: red; font-size: 30px">{{i}}</di><br><hr>
+    {%  endfor %}
+<h2>友情链接</h2>
+    <a href="kobe.html">致敬科比</a>
+</body>
+
+</html>
